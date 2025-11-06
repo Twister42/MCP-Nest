@@ -55,7 +55,8 @@ npx ts-node-dev --respawn playground/servers/server-stateful.ts
 **Test:**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2
+npx 
+@socotra/inspector@0.16.2
 ```
 
 Connect to: `http://localhost:3030/mcp`
@@ -290,7 +291,8 @@ async function bootstrap() {
 2. Run the inspector:
 
    ```bash
-   npx @modelcontextprotocol/inspector@0.16.2
+   npx 
+@socotra/inspector@0.16.2
    ```
 
 3. Connect to your server URL

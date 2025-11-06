@@ -211,13 +211,15 @@ McpAuthModule supports multiple storage backends:
 - Compatibility with NestJS versioning (VERSION_NEUTRAL)
 
 ### With MCP SDK
-- Wraps `@modelcontextprotocol/sdk` for transport layer
+- Wraps `
+@socotra/sdk` for transport layer
 - Handles MCP protocol message schemas
 - Progress reporting via context object
 - Elicitation support for interactive tool calls
 
 ### External Dependencies
-- `@modelcontextprotocol/sdk` - Core MCP protocol implementation
+- `
+@socotra/sdk` - Core MCP protocol implementation
 - `zod` - Parameter validation and schema definition
 - `path-to-regexp` - Dynamic URI matching for resource templates
 - `zod-to-json-schema` - Schema conversion for tool parameters

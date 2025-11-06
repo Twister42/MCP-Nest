@@ -1,4 +1,4 @@
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
 import { Inject, Injectable, Logger, Scope } from '@nestjs/common';
 import { ModuleRef } from '@nestjs/core';
 import { McpRegistryService } from './mcp-registry.service';

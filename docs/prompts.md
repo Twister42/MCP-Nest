@@ -215,7 +215,8 @@ npx ts-node-dev --respawn playground/servers/server-stateful.ts
 ### 2. List Available Prompts
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method prompts/list
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method prompts/list
 ```
 
 Expected output:
@@ -234,7 +235,8 @@ Expected output:
 ### 3. Get a Prompt Template
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method prompts/get --prompt-name multilingual-greeting-guide --prompt-args name=Alice --prompt-args language=es
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method prompts/get --prompt-name multilingual-greeting-guide --prompt-args name=Alice --prompt-args language=es
 ```
 
 Expected output:
@@ -259,7 +261,8 @@ Expected output:
 For interactive testing, use the MCP Inspector UI:
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2
+npx 
+@socotra/inspector@0.16.2
 ```
 
 Connect to `http://localhost:3030/mcp` and browse the prompts to test with different parameters.

@@ -1,13 +1,13 @@
 import { Inject, Injectable, InjectionToken, Scope } from '@nestjs/common';
 import { ContextIdFactory, ModuleRef } from '@nestjs/core';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
 import {
   ErrorCode,
   ListResourcesRequestSchema,
   ListResourceTemplatesRequestSchema,
   McpError,
   ReadResourceRequestSchema,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 import { McpRegistryService } from '../mcp-registry.service';
 import { McpHandlerBase } from './mcp-handler.base';
 import { Context } from '../../interfaces';

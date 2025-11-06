@@ -3,9 +3,9 @@ import {
   GetPromptRequestSchema,
   Progress,
   ReadResourceRequestSchema,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 import { z } from 'zod';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
 
 export type Literal = boolean | null | number | string | undefined;
 
@@ -14,12 +14,12 @@ export type SerializableValue =
   | SerializableValue[]
   | { [key: string]: SerializableValue };
 
-export type McpRequestSchema =
-  | typeof CallToolRequestSchema
-  | typeof ReadResourceRequestSchema
-  | typeof GetPromptRequestSchema;
-
-export type McpRequest = z.infer<McpRequestSchema>;
+const u = z.union([
+  CallToolRequestSchema,
+  ReadResourceRequestSchema,
+  GetPromptRequestSchema,
+]);
+export type McpRequest = z.infer<typeof u>;
 
 /**
  * Enhanced execution context that includes user information

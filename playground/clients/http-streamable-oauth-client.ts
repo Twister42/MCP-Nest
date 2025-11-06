@@ -7,21 +7,21 @@ import { URL } from 'node:url';
 import {
   OAuthClientProvider,
   UnauthorizedError,
-} from '@modelcontextprotocol/sdk/client/auth.js';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+} from '@socotra/modelcontextprotocol-sdk/client/auth.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
+import { StreamableHTTPClientTransport } from '@socotra/modelcontextprotocol-sdk/client/streamableHttp.js';
 import {
   OAuthClientInformation,
   OAuthClientInformationFull,
   OAuthClientMetadata,
   OAuthTokens,
-} from '@modelcontextprotocol/sdk/shared/auth.js';
+} from '@socotra/modelcontextprotocol-sdk/shared/auth.js';
 import {
   CallToolRequest,
   CallToolResultSchema,
   ListToolsRequest,
   ListToolsResultSchema,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 
 // Configuration
 const DEFAULT_SERVER_URL = 'http://localhost:3030/mcp';

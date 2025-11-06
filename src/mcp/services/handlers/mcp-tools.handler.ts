@@ -1,16 +1,15 @@
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
 import {
   CallToolRequestSchema,
   ErrorCode,
   ListToolsRequestSchema,
   McpError,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 import { Inject, Injectable, Scope } from '@nestjs/common';
 import { ContextIdFactory, ModuleRef } from '@nestjs/core';
-import { zodToJsonSchema } from 'zod-to-json-schema';
 import { McpRegistryService } from '../mcp-registry.service';
 import { McpHandlerBase } from './mcp-handler.base';
-import { ZodTypeAny } from 'zod';
+import z, { ZodTypeAny } from 'zod';
 import { HttpRequest } from '../../interfaces/http-adapter.interface';
 import { McpRequestWithUser } from 'src/authz';
 
@@ -75,12 +74,12 @@ export class McpToolsHandler extends McpHandlerBase {
 
         // Add input schema if defined
         if (tool.metadata.parameters) {
-          toolSchema['inputSchema'] = zodToJsonSchema(tool.metadata.parameters);
+          toolSchema['inputSchema'] = z.toJSONSchema(tool.metadata.parameters);
         }
 
         // Add output schema if defined, ensuring it has type: 'object'
         if (tool.metadata.outputSchema) {
-          const outputSchema = zodToJsonSchema(tool.metadata.outputSchema);
+          const outputSchema = z.toJSONSchema(tool.metadata.outputSchema);
 
           // Create a new object that explicitly includes type: 'object'
           const jsonSchema = {
@@ -127,9 +126,10 @@ export class McpToolsHandler extends McpHandlerBase {
                 ErrorCode.InvalidParams,
                 `Invalid parameters: ${validation.error.message}`,
               );
+            } else {
+              // Use validated arguments to ensure defaults and transformations are applied
+              request.params.arguments = validation.data as Record<string, unknown>;
             }
-            // Use validated arguments to ensure defaults and transformations are applied
-            request.params.arguments = validation.data;
           }
 
           const contextId = ContextIdFactory.getByRequest(httpRequest);

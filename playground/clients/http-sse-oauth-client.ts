@@ -9,19 +9,19 @@ import {
   OAuthClientInformationFull,
   OAuthClientMetadata,
   OAuthTokens,
-} from '@modelcontextprotocol/sdk/shared/auth.js';
+} from '@socotra/modelcontextprotocol-sdk/shared/auth.js';
 import {
   OAuthClientProvider,
   UnauthorizedError,
-} from '@modelcontextprotocol/sdk/client/auth.js';
-import { SSEClientTransport } from '@modelcontextprotocol/sdk/client/sse.js';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+} from '@socotra/modelcontextprotocol-sdk/client/auth.js';
+import { SSEClientTransport } from '@socotra/modelcontextprotocol-sdk/client/sse.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
 import {
   CallToolRequest,
   CallToolResultSchema,
   ListToolsRequest,
   ListToolsResultSchema,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 
 // Configuration
 const DEFAULT_SERVER_URL = 'http://localhost:9091/sse';

@@ -56,7 +56,8 @@ Time to see the authentication in action! You have two options:
 
 ```bash
 # Option 1: Use the MCP Inspector
-npx @modelcontextprotocol/inspector@0.14.3
+npx 
+@socotra/inspector@0.14.3
 
 # Option 2: Run MCP client (in another terminal from the root)
 npx ts-node-dev --respawn playground/clients/http-sse-oauth-client.ts

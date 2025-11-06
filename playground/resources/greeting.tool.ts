@@ -2,7 +2,7 @@ import type { Request } from 'express';
 import type { McpRequestWithUser } from '../../src';
 import { Injectable } from '@nestjs/common';
 import { Context, Tool } from '../../src';
-import { Progress } from '@modelcontextprotocol/sdk/types.js';
+import { Progress } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { z } from 'zod';
 
 const informalGreetings = {

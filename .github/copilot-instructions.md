@@ -144,7 +144,8 @@ return {
 - Versioning compatibility (VERSION_NEUTRAL)
 
 ### With MCP SDK
-- Wraps `@modelcontextprotocol/sdk` transports
+- Wraps `
+@socotra/sdk` transports
 - Handles MCP protocol schemas
 - Progress reporting via context
 - Elicitation support for interactive tools

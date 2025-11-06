@@ -1,7 +1,7 @@
 import { Logger } from '@nestjs/common';
 import { ModuleRef } from '@nestjs/core';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { Progress } from '@modelcontextprotocol/sdk/types.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
+import { Progress } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { Context, McpRequest, SerializableValue } from '../../interfaces';
 import { McpRegistryService } from '../mcp-registry.service';
 

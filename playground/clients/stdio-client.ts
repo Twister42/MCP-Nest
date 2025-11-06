@@ -1,10 +1,10 @@
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
+import { StdioClientTransport } from '@socotra/modelcontextprotocol-sdk/client/stdio.js';
 import {
   ListPromptsRequest,
   ListPromptsResultSchema,
   Progress,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 
 async function main(): Promise<void> {
   // Create a new client with streamable HTTP transport

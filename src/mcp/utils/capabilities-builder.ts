@@ -1,4 +1,4 @@
-import { ServerCapabilities } from '@modelcontextprotocol/sdk/types.js';
+import { ServerCapabilities } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { McpRegistryService } from '../services/mcp-registry.service';
 import { McpOptions } from '../interfaces';
 

@@ -3,10 +3,10 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { z } from 'zod';
 import { Context, Tool } from '../src';
 import { McpModule } from '../src/mcp/mcp.module';
-import { Progress } from '@modelcontextprotocol/sdk/types.js';
+import { Progress } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { CanActivate, ExecutionContext } from '@nestjs/common';
 import { createSseClient } from './utils';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
 
 // Mock authentication guard
 class MockAuthGuard implements CanActivate {

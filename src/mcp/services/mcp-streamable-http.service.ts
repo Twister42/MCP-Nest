@@ -1,8 +1,8 @@
 import { Inject, Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import { ContextIdFactory, ModuleRef } from '@nestjs/core';
 import { randomUUID } from 'crypto';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
+import { StreamableHTTPServerTransport } from '@socotra/modelcontextprotocol-sdk/server/streamableHttp.js';
 import { HttpAdapterFactory } from '../adapters/http-adapter.factory';
 import {
   HttpRequest,

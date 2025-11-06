@@ -1,7 +1,7 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import { ApplicationConfig, ContextIdFactory, ModuleRef } from '@nestjs/core';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
+import { McpServer } from '@socotra/modelcontextprotocol-sdk/server/mcp.js';
+import { SSEServerTransport } from '@socotra/modelcontextprotocol-sdk/server/sse.js';
 import { buildMcpCapabilities } from '../utils/capabilities-builder';
 import { McpOptions } from '../interfaces';
 import { McpExecutorService } from './mcp-executor.service';

@@ -1,17 +1,17 @@
-import { Progress } from '@modelcontextprotocol/sdk/types.js';
+import { Progress } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { INestApplication, Injectable, Scope } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { z } from 'zod';
 import { Context, McpModule, McpTransportType, Tool } from '../src';
 import { createStreamableClient } from './utils';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
 import { randomUUID } from 'crypto';
 import {
   CallToolRequest,
   CallToolResultSchema,
   ListToolsRequest,
   ListToolsResultSchema,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
 
 @Injectable()

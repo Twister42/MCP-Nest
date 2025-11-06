@@ -1,4 +1,4 @@
-import { Progress } from '@modelcontextprotocol/sdk/types.js';
+import { Progress } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { Inject, Injectable, Module, Scope } from '@nestjs/common';
 import { z } from 'zod';
 import { Context, McpTransportType, Tool } from '../../src';

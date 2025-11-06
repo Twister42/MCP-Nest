@@ -1,6 +1,6 @@
 // Code taken from https://github.com/modelcontextprotocol/typescript-sdk/blob/2c2cf5b4a2c09c336558cee3078320044e875c16/src/examples/client/simpleStreamableHttp.ts
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
+import { StreamableHTTPClientTransport } from '@socotra/modelcontextprotocol-sdk/client/streamableHttp.js';
 import {
   CallToolRequest,
   CallToolResultSchema,
@@ -10,7 +10,7 @@ import {
   ListToolsResultSchema,
   LoggingMessageNotificationSchema,
   ResourceListChangedNotificationSchema,
-} from '@modelcontextprotocol/sdk/types.js';
+} from '@socotra/modelcontextprotocol-sdk/types.js';
 
 async function main(): Promise<void> {
   // Create a new client with streamable HTTP transport

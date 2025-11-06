@@ -1,5 +1,5 @@
-import { Progress } from '@modelcontextprotocol/sdk/types.js';
-import { ElicitRequestSchema } from '@modelcontextprotocol/sdk/types.js';
+import { Progress } from '@socotra/modelcontextprotocol-sdk/types.js';
+import { ElicitRequestSchema } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { INestApplication, Inject, Injectable, Scope } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { z } from 'zod';
@@ -13,7 +13,7 @@ import {
   createStreamableClientWithElicitation,
 } from './utils';
 import { REQUEST } from '@nestjs/core';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
 import { randomUUID } from 'crypto';
 
 @Injectable()

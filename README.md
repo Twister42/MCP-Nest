@@ -36,7 +36,8 @@ Find out how to do that with `@rekog/MCP-Nest` in this repository [MCP-Nest-Samp
 ## Installation
 
 ```bash
-npm install @rekog/mcp-nest @modelcontextprotocol/sdk zod@^3
+npm install @rekog/mcp-nest 
+@socotra/sdk zod@^3
 ```
 
 ### Optional dependencies

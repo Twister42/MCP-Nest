@@ -1,8 +1,8 @@
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { SSEClientTransport } from '@modelcontextprotocol/sdk/client/sse.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
-import { ElicitRequestSchema } from '@modelcontextprotocol/sdk/types.js';
+import { Client } from '@socotra/modelcontextprotocol-sdk/client/index.js';
+import { SSEClientTransport } from '@socotra/modelcontextprotocol-sdk/client/sse.js';
+import { StreamableHTTPClientTransport } from '@socotra/modelcontextprotocol-sdk/client/streamableHttp.js';
+import { StdioClientTransport } from '@socotra/modelcontextprotocol-sdk/client/stdio.js';
+import { ElicitRequestSchema } from '@socotra/modelcontextprotocol-sdk/types.js';
 
 /**
  * Creates and connects a new MCP (Model Context Protocol) client for testing

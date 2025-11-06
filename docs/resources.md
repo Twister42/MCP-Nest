@@ -138,7 +138,8 @@ npx ts-node-dev --respawn playground/servers/server-stateful.ts
 ### 2. List Available Resources
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/list
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/list
 ```
 
 Expected output:
@@ -159,7 +160,8 @@ Expected output:
 ### 3. Read a Specific Resource
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://languages/informal-greetings"
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://languages/informal-greetings"
 ```
 
 Expected output:
@@ -181,7 +183,8 @@ Expected output:
 For interactive testing, use the MCP Inspector UI:
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2
+npx 
+@socotra/inspector@0.16.2
 ```
 
 Connect to `http://localhost:3030/mcp` and browse the resources to see your data.

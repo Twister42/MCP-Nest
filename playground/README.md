@@ -15,7 +15,8 @@ MCP Inspector provides a web-based UI to interact with your MCP server - perfect
 npx ts-node-dev --respawn ./playground/servers/server-stateful.ts
 
 # 2. Launch MCP Inspector
-npx @modelcontextprotocol/inspector
+npx 
+@socotra/inspector
 
 # 3. In your browser at http://127.0.0.1:6274:
 #    - Set Transport Type to: SSE
@@ -31,7 +32,8 @@ npx ts-node-dev --respawn ./playground/servers/server-stateful.ts
 npx ts-node-dev --respawn ./playground/servers/server-stateless.ts
 
 # 2. Launch MCP Inspector
-npx @modelcontextprotocol/inspector
+npx 
+@socotra/inspector
 
 # 3. In your browser at http://127.0.0.1:6274:
 #    - Set Transport Type to: Streamable HTTP
@@ -42,7 +44,8 @@ npx @modelcontextprotocol/inspector
 
 ```bash
 # 1. Run the MCP Inspector and configure it to use the STDIO server
-npx @modelcontextprotocol/inspector@0.13.0 npx ts-node-dev --respawn playground/servers/stdio.ts
+npx 
+@socotra/inspector@0.13.0 npx ts-node-dev --respawn playground/servers/stdio.ts
 
 
 # 2. In your browser:

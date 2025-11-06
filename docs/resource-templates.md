@@ -242,7 +242,8 @@ npx ts-node-dev --respawn playground/servers/server-stateful.ts
 ### 2. List Available Resource Templates
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/templates/list
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/templates/list
 ```
 
 Expected output:
@@ -265,7 +266,8 @@ Expected output:
 **Test with a known user:**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://users/carlos"
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://users/carlos"
 ```
 
 Expected output:
@@ -285,7 +287,8 @@ Expected output:
 **Test with another user:**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://users/carlos"
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://users/carlos"
 ```
 
 Expected output:
@@ -305,7 +308,8 @@ Expected output:
 **Test with unknown user (fallback behavior):**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://users/unknown"
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method resources/read --uri "mcp://users/unknown"
 ```
 
 Expected output:
@@ -327,7 +331,8 @@ Expected output:
 For interactive testing, use the MCP Inspector UI:
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2
+npx 
+@socotra/inspector@0.16.2
 ```
 
 Connect to `http://localhost:3030/mcp` and try accessing different URIs to test your templates.

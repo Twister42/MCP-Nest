@@ -4,7 +4,7 @@ import {
   OnModuleDestroy,
   Logger,
 } from '@nestjs/common';
-import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
+import { SSEServerTransport } from '@socotra/modelcontextprotocol-sdk/server/sse.js';
 import { HttpResponse } from '../interfaces/http-adapter.interface';
 
 /**

@@ -165,7 +165,8 @@ npx ts-node-dev --respawn playground/servers/server-stateful.ts
 ### 2. List Available Tools
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/list
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/list
 ```
 
 Expected output:
@@ -200,7 +201,8 @@ Expected output:
 **Basic tool call:**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/call --tool-name greet-user --tool-arg name=Alice --tool-arg language=es
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/call --tool-name greet-user --tool-arg name=Alice --tool-arg language=es
 ```
 
 Expected output:
@@ -221,7 +223,8 @@ Expected output:
 Interactive tool calls, use elicitation to get additional input from users. The **MCP Inspector CLI currently doesn't support elicitation**, but as soon as this [GitHub issue](https://github.com/modelcontextprotocol/inspector/issues/524) is resolved, you can test it with the command below. **In the meantime, you can test it using the MCP Inspector UI.**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/call --tool-name greet-user-interactive --tool-arg name=Bob
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/call --tool-name greet-user-interactive --tool-arg name=Bob
 ```
 
 Elicited input:
@@ -246,7 +249,8 @@ Expected output:
 **Structured tool call (with output schema):**
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/call --tool-name greet-user-structured --tool-arg name=Charlie --tool-arg language=fr
+npx 
+@socotra/inspector@0.16.2 --cli http://localhost:3030/mcp --transport http --method tools/call --tool-name greet-user-structured --tool-arg name=Charlie --tool-arg language=fr
 ```
 
 Expected output:
@@ -272,7 +276,8 @@ Expected output:
 For interactive testing with progress updates, use the MCP Inspector UI:
 
 ```bash
-npx @modelcontextprotocol/inspector@0.16.2
+npx 
+@socotra/inspector@0.16.2
 ```
 
 Connect to `http://localhost:3030/mcp` to test your tools interactively and see progress reporting in real-time.

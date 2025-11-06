@@ -1,4 +1,4 @@
-import { ServerCapabilities } from '@modelcontextprotocol/sdk/types.js';
+import { ServerCapabilities } from '@socotra/modelcontextprotocol-sdk/types.js';
 import { CanActivate, ModuleMetadata, Type } from '@nestjs/common';
 
 export enum McpTransportType {
